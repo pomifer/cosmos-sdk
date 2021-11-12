@@ -19,3 +19,8 @@ func NewMigrator(keeper Keeper) Migrator {
 func (m Migrator) Migrate1to2(ctx sdk.Context) error {
 	return v043.MigrateStore(ctx, m.keeper.storeKey)
 }
+
+// Migrate2to3 migrates x/staking state from consensus version 2 to 3.
+func (m Migrator) Migrate2to3(ctx sdk.Context) error {
+	return v045.MigrateStore(ctx, m.keeper.storeKey, m.keeper.cdc, m.keeper.paramstore)
+}
