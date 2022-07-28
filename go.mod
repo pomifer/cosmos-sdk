@@ -1,4 +1,4 @@
-go 1.17
+go 1.18
 
 module github.com/cosmos/cosmos-sdk
 
@@ -17,7 +17,6 @@ require (
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
-	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/gorilla/handlers v1.5.1
 	github.com/gorilla/mux v1.8.0
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
@@ -51,6 +50,8 @@ require (
 	google.golang.org/protobuf v1.27.1
 	gopkg.in/yaml.v2 v2.4.0
 )
+
+require golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e
 
 require (
 	filippo.io/edwards25519 v1.0.0-beta.2 // indirect
